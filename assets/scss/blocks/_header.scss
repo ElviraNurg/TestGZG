@@ -1,0 +1,13 @@
+.header{
+    width: 87.5%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(min-width:$desktop-width){
+   .header{
+    height: 70px;
+    width: 91.8%;
+   }
+}

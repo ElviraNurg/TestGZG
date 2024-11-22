@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>test GosZakazGroup</title>
+  <link rel="stylesheet" href="./assets/scss/main.scss">
+</head>
+
+<body>
+  <header class="header wrapper-center">
+    <a class="header__link" href="index.html">
+      <img src="assets/images/logo.svg" width="50" height="48" alt="логотип">
+    </a>
+    <nav class="navigation navigation--open navigation--nojs">
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link text__normal" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__item--active text__normal" href="#">О нас</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link text__normal" href="#">Контакты</a>
+        </li>
+        <li class="navigation__item">
+          <form class="navigation__search-form navigation__search-form--label" action="/search" method="get">
+            <label class="text__normal" for="query">Поиск</label>
+            <input class="navigation__search-input" type="text" name="query" placeholder="Поиск">
+            <button class="navigation__search-btn" type="submit"><img src="assets/images/search.svg" width="20"
+                height="20" alt="Поиск"></button>
+          </form>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link text__normal" href="tel:+798788787">
+            +7 (987) 887-87</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+    </section>
+    <section class="main">
+      <ul class="main__list wrapper-center">
+        <li class="main__item"></li>
+        <li class="main__item"></li>
+        <li class="main__item"></li>
+        <li class="main__item"></li>
+        <ul class="main__sublist">
+          <li class="main__sub-item"></li>
+          <li class="main__sub-item"></li>
+        </ul>
+      </ul>
+
+      <div class="main__more-btn-box">
+        <button class="main__more-btn button wrapper-center" type="button">
+          <span class="text__normal">
+            Показать еще 6
+          </span>
+        </button>
+      </div>
+      <div class="main__pagination wrapper-center">
+        <button class="main__pagination-prev" type="button" disabled>
+          <span class="main__pagination-prev-text">Предыдущая</span>
+        </button>
+        <a class="main__pagination-link" href="#">1</a>
+        <a class="main__pagination-link main__pagination-link--active" href="#">2</a>
+        <a class="main__pagination-link" href="#">3</a>
+        <a class="main__pagination-link" href="#">4</a>
+        <button class="main__pagination-next" type="button">
+          <span class="main__pagination-next-text">Следующая</span>
+        </button>
+      </div>
+      <aside class="main__popular-news wrapper-center">
+        <h2 class="main__popular-title text__title">Популярные новости</h2>
+        <ul class="main__popular-news-list">
+          <li class="main__popular-news-item">
+            <h3 class="main__popular-news-title text__normal">ITAM&SAMDay – самая настоящая удача!</h3>
+            <span class="main__popular-news-date text__normal">13 дек 2020</span>
+          </li>
+          <li class="main__popular-news-item">
+            <h3 class="main__popular-news-title text__normal">Секреты лицензирования. Всё, что вы хотели знать про
+              Microsoft, SAP и ...</h3>
+            <span class="main__popular-news-date text__normal">10 дек 2020</span>
+          </li>
+          <li class="main__popular-news-item">
+            <h3 class="main__popular-news-title text__normal">Менеджмент XXI века. Надо ли готовиться к изменениям или
+              мы давно ...</h3>
+            <span class="main__popular-news-date text__normal">5 дек 2020</span>
+          </li>
+        </ul>
+      </aside>
+      <div class="main__email wrapper-center">
+        <div class="wrapper-center main__form-box">
+          <h2 class="main__email-title text__title">Подписка на рассылку</h2>
+          <form action="#" class="main__email-input-box">
+            <label class="main__email-label visually-hidden" for="email">Введите e-mail</label>
+            <input class="main__email-input" type="email" id="email" placeholder="Email@gmail.com">
+            <button class="main__email-btn button" type="submit"><span
+                class="main__email-btn-text text__normal">Подписаться</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo-box wrapper-center">
+      <a class="header__link" href="index.html">
+        <img src="assets/images/logo.svg" width="50" height="48" alt="логотип">
+      </a>
+    </div>
+    <ul class="navigation__list footer__nav-list">
+      <li class="navigation__item footer__nav-item">
+        <a class="navigation__link" href="№">Галерея</a>
+      </li>
+      <li class="navigation__item footer__nav-item">
+        <a class="navigation__link navigation__item--active" href="#">О нас</a>
+      </li>
+      <li class="navigation__item footer__nav-item">
+        <a class="navigation__link" href="#">Новости</a>
+      </li>
+      <li class="navigation__item footer__nav-item">
+        <a class="navigation__link footer__nav-link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <div>
+      <p class="footer__text">ООО “Организация” 2020. Все права защищены</p>
+    </div>
+  </footer>
+
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

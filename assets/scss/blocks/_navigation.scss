@@ -1,0 +1,145 @@
+.navigation__toggle {
+    display: none;
+}
+
+@media(max-width:$mobile-width-only) {
+    .navigation__toggle {
+        display: block;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: none;
+        position: relative;
+        padding: 0;
+        cursor: pointer;
+
+    }
+
+    //Кнопка открыть меню
+    .navigation--open .navigation__toggle::before {
+        position: absolute;
+        content: "";
+        top: 12px;
+        left: 5px;
+        background-color: black;
+        width: 40px;
+        height: 3px;
+        border-radius: 10%;
+        box-shadow: 0 11px 0 0 black, 0 22px 0 0 black;
+    }
+
+    //Кнопка закрыть меню
+    .navigation--close .navigation__toggle {
+        margin: 0;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 12px;
+            width: 25px;
+            height: 2px;
+            background-color: black;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+            box-shadow: none;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .navigation--close .navigation__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        gap: 0;
+        width: 100%;
+        padding-left: 6%;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+    .navigation--open .navigation__list{
+        display: none;
+    }
+}
+
+.navigation__search-form {
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation__search-form--label input,
+.navigation__search-form--label button {
+    display: none;
+}
+
+.navigation__search-form--input label {
+    display: none;
+}
+
+.navigation__search-input {
+    height: 30px;
+}
+
+.navigation__search-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.navigation__item {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: $black-text;
+}
+
+.navigation__link:active {
+    color: $active-link;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: $active-link;
+    }
+}
+
+.navigation__item:last-child .navigation__link {
+    color: $active-link;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    position: relative;
+    &::before{
+        content:'';
+        width: 14px;
+        height: 15px;
+        position: absolute;
+        background-image: url('./../images/phone-call\ 1.svg');
+        left: 0;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}

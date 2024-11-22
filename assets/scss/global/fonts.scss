@@ -1,0 +1,18 @@
+/* здесь подключите шрифты */
+@font-face {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-style: normal;
+  font-display: "Arial";
+  src:
+    url("../../fonts/futura-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-weight: 600;
+  font-style: normal;
+  font-display: "Arial";
+  src:
+    url("../../fonts/futura-bold.woff2") format("woff2");
+}
